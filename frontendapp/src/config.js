@@ -1,6 +1,6 @@
 const config = 
 {
-    url: 'http://localhost:2004'
+    url: 'https://musikstreaming-api.vercel.app/'
 };
 
 export default config;
