@@ -34,7 +34,7 @@ mongoose.connect(dburl).then(() => {
 const app = express() 
 app.use(cors(
     {
-origin:[""],
+origin:["https://musikstreaming-1whz.vercel.app"],
 methods:["POST","GET"],
 credentials: true        
         
