@@ -11,6 +11,11 @@ const cors = require("cors")
 // }).catch((err) => {
 //     console.log(err.message)
 // });
+app.get("/", (req,res)=>{
+    res.json("Hello");
+}
+    
+       )
 
 
 // mongo DB atlas connection
