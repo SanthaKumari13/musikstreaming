@@ -4,6 +4,7 @@ const cors = require("cors")
 
 //MongoDB compass connextion
 
+
 // const dburl = "mongodb://localhost:27017/sdpprojectdata14"
 // mongoose.connect(dburl).then(() => {
 //     console.log("Connected to DB Successfully")
@@ -31,7 +32,14 @@ mongoose.connect(dburl).then(() => {
 // ) 
 
 const app = express() 
-app.use(cors())
+app.use(cors(
+    {
+origin:[""],
+methods:["POST","GET"],
+credentials: true        
+        
+    
+))
 app.use(express.json())  // to parse JSON data
 
 const adminrouter = require("./routes/adminroutes")
